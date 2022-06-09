@@ -2,6 +2,10 @@
 pragma solidity ^0.8.0;
 
 interface IWETH {
+    function totalSupply() external view returns (uint256);
+
+    function balanceOf(address account) external view returns (uint256);
+
     function deposit() external payable;
 
     function withdraw(uint256) external;
